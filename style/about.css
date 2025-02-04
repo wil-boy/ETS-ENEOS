@@ -1,0 +1,136 @@
+.navbar {
+  background-color: transparent !important; /* Make the navbar transparent by default */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Class added when scrolled */
+.navbar.scrolled {
+  background-color: orange !important; /* Set the background color to orange when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+/* Custom CSS for hover dropdown */
+.services-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none; /* Hide dropdown menu by default */
+  position: absolute;
+  background-color: #fff; /* Optional: Adjust to fit your design */
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.dropdown-item {
+  padding: .5rem 1rem;
+}
+
+#home-link:hover,
+#about-link:hover,
+#contact-link:hover,
+#navbarDropdown:hover {
+  color: #0d6efd !important; /* Change text color to blue on hover */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Optional: Change background color on hover */
+}
+
+.services-icon {
+  color: orange !important;
+}
+/* Logo Styling */
+.logo-img {
+  width: 50px; /* Adjust width for better visibility */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: gives rounded corners */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for emphasis */
+}
+
+.navbar-brand strong {
+  font-size: 1.25rem; /* Slightly larger text for the brand name */
+  color: #ffffff; /* Ensure it stands out */
+}
+  
+  
+  /*===========================================navbar end ===============================*/
+  /*========================navbar end ===============================*/
+/* Hero Section=============================================================================================================== CSS */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.hero {
+  position: relative;
+  height: 50vh;
+  background: url('../PICTURE/floor-plan-1857175_1280.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero h1 {
+  position: relative;
+  z-index: 1;
+}
+.section-title {
+  margin-bottom: 3rem;
+}
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.icon-box i {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-right: 1rem;
+}
+/*=========================hero section end================================================================================*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*===========================team ==========================================================*/
+.team-member-image {  
+  width: 150px; /* Set a consistent width */  
+  height: 150px; /* Set a consistent height */  
+  object-fit: cover; /* Ensures the image covers the area without distortion */  
+  border-radius: 50%; /* Ensures images are rounded */  
+}  
+/*===============================================================================*/
+
+/*=====footer==================================================*/
+.footer-07 h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-07 ul li {
+  margin-bottom: 8px;
+}
+
+.footer-07 a:hover {
+  color: #FFD700; /* Gold color on hover */
+  text-decoration: underline;
+}
+
+/*=============================== footer end================================*/
