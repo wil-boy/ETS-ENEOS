@@ -4,6 +4,7 @@
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
+
 /* Class added when scrolled */
 .navbar.scrolled {
   background-color: orange !important; /* Set the background color to orange when scrolled */

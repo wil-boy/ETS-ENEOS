@@ -9,41 +9,25 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
-//==========================================================================//
-//===.testimonial {
-  //background-color: #f8f9fa;
-  //padding: 2rem;
-  //border-radius: 0.5rem;
-  //margin: 1rem;
-//}//
-//=========swiper js===start=====================================================================//
 $(document).ready(function() {
+  // Initialize Swiper
   var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
-      spaceBetween: 30,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
-      autoplay: {
-          delay: 5000, // Delay in milliseconds (5 seconds)
-          disableOnInteraction: false, // Autoplay won't be disabled after user interactions
-      },
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000, // Delay in milliseconds (5 seconds)
+      disableOnInteraction: false, // Autoplay won't be disabled after user interactions
+    },
   });
-});
 
-//===========================swiper js stop=======================================================///
-(function($) {
+  // Initialize tooltips
+  $('[data-toggle="tooltip"]').tooltip();
 
-	"use strict";
-
-	$('[data-toggle="tooltip"]').tooltip()
-
-})(jQuery);
-//====================================================================================================//
-//=======================FORM START========================================================================//
-$(document).ready(function() {
+  // Form submission handling
   $('#myForm').on('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
@@ -71,4 +55,3 @@ $(document).ready(function() {
     });
   });
 });
-//=========================---------FORM end===============================================================================//
